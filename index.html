@@ -15,25 +15,25 @@
     </header>
 
     <div class="form-container">
-      <form action="">
+      <form action="" id="address-form" method="post">
         <fieldset>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" />
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" />
 
-          <label for="address">Address</label>
-          <input type="text" id="address" name="address" />
+          <label for="streetname">Street name</label>
+          <input type="text" id="streetname" name="streetname" />
 
-          <label for="house-number">House Number</label>
-          <input type="text" id="house-number" name="house-number" />
+          <label for="housenumber">House Number</label>
+          <input type="text" id="housenumber" name="housenumber" />
 
-          <label for="postal-code">Postal Code</label>
-          <input type="text" id="postal-code" name="postal-code" />
+          <label for="postalcode">Postal Code</label>
+          <input type="text" id="postalcode" name="postalcode" oninput="getCityInfo()"/>
 
           <label for="city">City</label>
           <input type="text" id="city" name="city" />
 
-          <label for="alt-address">Alternative Address (optional)</label>
-          <input type="text" id="alt-address" name="alt-address" />
+          <label for="altaddress">Alternative Address (optional)</label>
+          <input type="text" id="altaddress" name="altaddress" />
 
           <label for="phone">Phone Number</label>
           <input type="text" id="phone" name="phone" />
@@ -41,7 +41,7 @@
           <label for="email">E-Mail</label>
           <input type="text" id="email" name="email" />
 
-          <input type="submit" />
+          <input type="submit" id="btn-submit" />
         </fieldset>
       </form>
     </div>
